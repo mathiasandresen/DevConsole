@@ -8,9 +8,11 @@ public class #SCRIPTNAME# : MonoBehaviour {
     public string description = #DESCRIPTION#;
     public string helpText = #HELPTEXT#;
 
+	//This is the method that is run when the command is typed into the console
     string Function(string param)
     {
-        return null;
+		//TODO EDIT THIS
+        return null; //The return value is printed in the console
     }
 
     void Start()

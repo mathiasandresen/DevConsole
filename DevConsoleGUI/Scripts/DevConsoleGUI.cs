@@ -24,6 +24,7 @@ public class DevConsoleGUI : MonoBehaviour
 
     void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
         DevConsole.OnOutput += OnOutput;
         DevConsole.OnToggle += OnToggle;
         devConsoleInput.GetComponent<DevConsoleGUIInput>().devConsoleGUI = this;
