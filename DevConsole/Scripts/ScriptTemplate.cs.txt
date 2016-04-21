@@ -1,0 +1,23 @@
+using UnityEngine;
+using System.Collections;
+using System;
+
+[AddComponentMenu("DevConsole/Commands/#COMMAND#")]
+public class #SCRIPTNAME# : MonoBehaviour {
+    public string command = "#COMMAND#";
+    public string description = #DESCRIPTION#;
+    public string helpText = #HELPTEXT#;
+
+    string Function(string param)
+    {
+        return null;
+    }
+
+    void Start()
+    {
+        if (string.IsNullOrEmpty(helpText))
+            DevConsole.AddCommand(command, description, Function);
+        else
+            DevConsole.AddCommand(command, description, Function, helpText);
+    }
+}
