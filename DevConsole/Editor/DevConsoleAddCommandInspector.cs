@@ -45,6 +45,7 @@ public class DevConsoleAddCommandInspector : Editor {
                 if (GUILayout.Button("Create Command"))
                 {
                     myTarget.CreateCommand();
+                    AssetDatabase.Refresh();
                     this.Close();
                 }
             }
